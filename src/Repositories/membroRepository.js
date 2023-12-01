@@ -18,7 +18,7 @@ class MembroRepository{
         }
 
         findAll(){
-            const sqlCommand = 'SELECT *  FROM membro;'    
+            const sqlCommand = 'SELECT * FROM membro;'    
             return new Promise((resolve, reject) =>{
                 conection.query(sqlCommand, (erro, result)=>{
                     if(erro) return reject('Não foi possível')
